@@ -8,12 +8,11 @@ inspired by [Waterfall](https://github.com/crambaud/waterfall).
 
 ## Features
 
-- oneline
-- layout-only chrome stylesheet (which means that it doesn't break chrome themes)
+- oneline - tabs on the left, URL bar on the right
+- layout-only (which means that it doesn't break chrome themes)
 - simple - most elements are hidden
 - sharp - no border radii
 - compact - as little padding as possible
-- tabs on the left, URL bar on the right.
 
 Other properly-made chrome stylesheets:
 - [gwfox](https://github.com/akkva/gwfox)
