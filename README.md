@@ -6,6 +6,9 @@ Foxlim is a slim, compact, and simple oneline chrome stylesheet for the Proton U
 
 inspired by [Waterfall](https://github.com/crambaud/waterfall).
 
+> [!NOTE]
+> Tested and working only on Firefox 139.0
+
 ## Features
 
 - oneline - tabs on the left, URL bar on the right
