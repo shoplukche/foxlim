@@ -1,6 +1,6 @@
 # Foxlim
 
-Foxlim is a slim, compact, and simple oneline stylesheet for the Proton UI Refresh in Firefox Desktop.
+Foxlim is a slim, compact, and simple oneline chrome stylesheet for the Proton UI Refresh in Firefox Desktop.
 
 ![Preview](foxlim-firefox-150-preview.png)
 
@@ -9,13 +9,13 @@ inspired by [Waterfall](https://github.com/crambaud/waterfall).
 ## Features
 
 - oneline
-- layout-only stylesheet (which means that it doesn't break themes)
+- layout-only chrome stylesheet (which means that it doesn't break chrome themes)
 - simple - most elements are hidden
 - sharp - no border radii
 - compact - as little padding as possible
 - tabs on the left, URL bar on the right.
 
-Other properly-made stylesheets:
+Other properly-made chrome stylesheets:
 - [gwfox](https://github.com/akkva/gwfox)
 - [FoxOne](https://github.com/Firnschnee/FoxOne)
 - [LittleFox](https://github.com/biglavis/LittleFox)
@@ -24,7 +24,7 @@ Other properly-made stylesheets:
 
 > [!CAUTION]
 > 
-> Proton UI Refresh is still broken and custom stylesheets can only fix some of the superficial problems.
+> Proton UI Refresh is still broken and custom chrome stylesheets can only fix some of the superficial problems.
 > 
 > https://discourse.mozilla.org/t/so-now-we-can-not-even-turn-off-proton/83108/
 
@@ -36,6 +36,6 @@ This stylesheet is a little broken (eg. alert() is too small), because Mozilla e
 
 The reason Mozilla doesn't officially support custom browser CSS stylesheets is because they don't know how to use CSS properly. Just open the Browser Toolbox to see the nonsense CSS they wrote for the browser. It's worse than AI-generated.
 
-Mozilla needs to simplify their browser's CSS and give userChrome.css and userContent.css highest priority, instead of having to put thousands of "!important" rules in them.
+Mozilla broke Firefox beyond repair, but the least they should to do is give userChrome.css and userContent.css highest priority, instead of having to put thousands of "!important" rules in them.
 
-Mozilla isn't the only one, and these problems are symptoms of a much bigger problem, which I'm working on solving forever.
+Mozilla isn't the only one, and these problems are symptoms of a much bigger problem, which I'm working on solving once and for all.
