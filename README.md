@@ -27,6 +27,12 @@ Tested with Firefox versions 139 to 151.
 
 4. Download this [**`userChrome.css`**](https://github.com/shoplukche/foxlim/blob/main/userChrome.css) into that `chrome` directory.
 
+5. Restart Firefox.
+
+> [!TIP]
+> 
+> You can right-click on the chrome, click on *Customize Toolbar…*, and remove what you don't need.
+
 ## Other
 
 Other properly-made stylesheets:
