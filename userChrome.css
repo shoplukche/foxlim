@@ -1,0 +1,356 @@
+/*** One-line layout ***/
+
+/* The "default" layout is shown when the minimal window width is smaller than 1000px */
+#navigator-toolbox { display: flex; flex-direction: column; }
+
+/* The layout will transition to one-line when the minimal window width is bigger than 1000px */
+@media (min-width: 1000px) { #navigator-toolbox { display: flex; flex-direction: row; flex-wrap: wrap; }
+#toolbar-menubar { flex: 0 0 100% !important; }
+#TabsToolbar { flex: 1; }
+/* The 2nd clamp value is the preferred value of the width of the navigation bar */
+#nav-bar { flex: 0px 0px clamp(250px, 20vw, 600px); } }
+
+/* No need to add anything below this comment, just adjust the sizes of elements if you want to */
+
+/*** Tabs toolbar and URL bar sizes and alignment ***/
+
+#TabsToolbar { height: 28px !important; }
+#TabsToolbar-customization-target { height: 26px !important; }
+
+/* Tab minimal height. 24px is the lowest they'll go without clipping the text
+It's 26px because of the navigation bar */
+:root { --tab-min-height: 26px !important; }
+/* Tabstrip height. */
+:root { --tabstrip-min-height: 26px !important; }
+/* Tab text label box height */
+.tab-label-container { height: 26px !important; }
+:root { --tab-block-margin: 0px !important; }
+
+/* Centering of the inner tabs toolbar */
+#TabsToolbar-customization-target { align-self: center; }
+
+/* URL bar */
+#urlbar-container { flex: 1 !important; }
+
+/* URL bar height. It should be the same as the extension icon sizes (26px) */
+#urlbar-container, #search-container { padding-block: 0px !important; }
+#urlbar-container { --urlbar-container-height: 28px !important; }
+#urlbar { --urlbar-min-height: 26px !important; --urlbar-height: 26px !important; }
+
+/* URL bar breakout */
+.urlbar-input-container {
+height: var(--urlbar-container-height);
+padding-block: 0px;
+padding-inline: 1px !important; } }
+
+/* URL bar results */
+:root { --urlbarView-results-padding: 1px !important; }
+
+/* Sizing and centering of navigation bar toolbar buttons, tab list button, and flexible space */
+.chromeclass-toolbar-additional {
+height: 24px !important;
+align-content: center;
+align-items: center;
+align-self: center;
+}
+
+/* URL bar magnifying glass ending margin */
+:root { --identity-box-margin-inline: 0px; }
+
+/* Trust (shield) icon */
+#trust-icon-container { height: 22px; }
+
+/* Hide the Add tab to taskbar button */
+#taskbar-tabs-button { visibility: collapse; }
+
+/* Notifications */
+#notifications-toolbar { min-width: 0px !important; width: 0px !important; visibility: collapse !important; }
+
+
+/* Context panel */
+menupopup, panel {
+--panel-subview-body-padding-block: 0px !important;
+--panel-separator-margin-vertical: 2px !important;
+--panel-separator-margin-horizontal: 0px !important;
+--panel-border-radius: 0px !important;
+--panel-padding-block: 0px !important;
+--panel-shadow-margin: 0px !important;
+--menuitem-border-radius: 0px !important;
+--menuitem-padding: 0px 4px !important;
+}
+
+/* Application (Hamburger) menu buttons */
+.subviewbutton { min-height: 18px !important; }
+
+menuseparator {
+  padding-block: 1px !important;
+}
+
+/*** Toolbar items ***/
+
+/* Show the back button */
+#back-button{ display: inline-flex !important; }
+
+/* Hide the forward, reload and stop buttons */
+#forward-button{ display: none !important; }
+#reload-button{ display: none !important; }
+#stop-button{ display: none !important; }
+
+/* Hide the bookmark icon
+#star-button{ display: none !important; }
+*/
+
+/* Hide the 3-dot menu and bookmarks star
+#pageActionButton { display: none !important; }
+#page-action-buttons { display: none !important; }
+*/
+
+/* Hide the zoom indicator
+#urlbar-zoom-button { display: none !important; }
+*/
+
+/* Show the hamburger menu */
+#PanelUI-button { display: inline-flex !important;}
+
+/* Hide the reader mode icon */
+#reader-mode-button{ display: none !important; }
+
+/* Hide the tracking protection shield icon
+#tracking-protection-icon-container { display: none !important; }
+*/
+
+/* Hide encryption and permission items
+#identity-box { display: none !important }
+*/
+
+/* Hide permission item */
+#identity-permission-box { display: none !important; }
+
+/* e.g. playing indicator (secondary - not icon) */
+.tab-secondary-label { display: none !important; }
+
+
+/*** Context (Right click menu) items
+Comment-out the ones you want to see in the context menu ***/
+
+/* Open Link (in Current Tab) */
+#context-openlinkincurrent,
+
+/* Open Link in New Tab 
+#context-openlinkintab,
+*/
+
+/* Open Link in New Container Tab */
+#context-openlinkinusercontext-menu,
+
+/* Open Link in New Window */
+#context-openlink,
+
+/* Open Link in New Private Window */
+#context-openlinkprivate,
+
+/* Save Page As… */
+#context-savepage,
+
+/* Select All */
+#context-selectall,
+#context-sep-selectall,
+
+/* Print Selection… */
+#context-print-selection,
+
+/* Search Selection 
+#context-searchselect,
+*/
+
+/* Search Selection in Private Window */
+#context-searchselect-private,
+
+/* Bookmark Link… */
+#context-sep-open,
+#context-bookmarklink,
+
+/* Save Link As… 
+#context-savelink,
+*/
+
+/* Copy Link
+#context-copylink,
+ */
+
+/* Copy Clean Link */
+#context-stripOnShareLink,
+
+/* Send Link to Device */
+#context-sendlinktodevice,
+
+/* Reload Image */
+#context-reloadimage,
+
+/* Open Image in New Tab 
+#context-viewimage,
+*/
+
+/* Email Image… */
+#context-sendimage,
+
+/* googlelens */
+
+/* Set Image as Desktop Background… (and preceding separator) */
+#context-sep-setbackground, #context-setDesktopBackground,
+
+/* Inspect Accessibility Properties */
+#context-inspect-a11y,
+
+/* Always Open Similar Files */
+#downloads-cmd-always-open-similar-files,
+
+/* Remove From History */
+#downloads-cmd-remove-from-history,
+
+/* Clear Preview Panel */
+#downloads-cmd-clear-list
+
+/*  */
+
+{ display: none !important; }
+
+
+/*** Padding and similar nonsense ***/
+/* Makes the Proton UI Refresh less tablet-y and more desktop-like. */
+
+/* Border radius */
+:root {
+--border-radius-xsmall: 0px !important;
+--border-radius-small: 0px !important;
+--border-radius-medium: 0px !important;
+--border-radius-large: 0px !important;
+--tab-border-radius: 0px !important;
+}
+
+/* Tab radius */
+.tab-background {
+border-radius: 0px !important;
+padding: 0px !important; }
+
+:root {
+--toolbarbutton-border-radius: 0px !important;
+--urlbar-icon-padding: 4px !important;
+--identity-box-margin-inline: 2px !important;
+--tab-close-button-padding: 0px !important;
+--focus-outline-offset: 1px !important;
+--focus-outline-width: 1px !important;
+}
+
+/* Toolbar button icon border */
+#scrollbutton-up, #scrollbutton-down { border: 0px; }
+
+/* Tab content (favicon and label) padding */
+:root {
+--tab-inline-padding: 5px !important;
+}
+
+:root {
+--arrowpanel-border-radius: 0px;
+--arrowpanel-menuitem-border-radius: 0px;
+}
+
+/* Remove the border below the whole navigator toolbox */
+#navigator-toolbox { border-bottom: none !important; }
+
+#urlbar,
+#urlbar * { box-shadow: none !important; }
+
+/* Padding of navigation bar toolbar buttons
+It can go to 0px, but some extensions, like uBlock Origin, don't fit below 6px */
+.toolbarbutton-icon, .toolbarbutton-badge-stack { --toolbarbutton-inner-padding: 6px; }
+/* This has to be 1px */
+#TabsToolbar {
+border-inline-start: 1px solid transparent !important;
+padding: 1px;
+--toolbarbutton-inner-padding: 0px; }
+:root {
+--toolbarbutton-outer-padding: 0px !important;
+--arrowpanel-menuitem-padding: 0px !important;
+--container-tabs-indicator-margin: 0px;
+--urlbar-container-padding: 0px;
+--urlbar-margin-inline: 0px;
+--urlbar-padding-block: 0px;
+}
+toolbar .toolbaritem-combined-buttons { margin-inline: 0px !important; }
+.toolbar-items { height: 26px !important; }
+
+/* URL bar "Suggestions" label margin */
+.urlbarView-row[label] { margin-block-start: 20px !important; }
+
+/* URL bar suggestions */
+.urlbarView-row { padding-block: 0px !important; }
+
+/* URL bar suggestions icon size */
+:root { --urlbarView-rich-suggestion-default-icon-size: 32px !important; }
+
+/* Empty space between URL bar suggestions */
+:root { --urlbarView-row-gutter: 0px !important; }
+
+/* This time, search with: padding */
+.search-one-offs { padding-block: 0px !important; }
+#urlbar .search-panel-one-offs-header-label { padding-inline: 8px; }
+
+/* Search one-off outer icon size and margins */
+.box-inherit, .button-box { height: 26px !important; }
+.searchbar-engine-one-off-item { margin-inline: 0px !important; }
+
+/* Make the titlebar buttons thinner */
+.titlebar-buttonbox-container { margin: 0px 4px 0px 4px !important; }
+.titlebar-button { margin: 0px; padding: 8px 4px !important; }
+#back-button { padding: 0px !important; }
+#urlbar-container { margin: 0px !important; }
+#PanelUI-menu-button { padding: 0px !important; }
+
+/* Remove "padding" left and right of tabs */
+.titlebar-spacer { display: none !important; }
+
+/* Remove the gaps after pinned tabs */
+.tabbrowser-tab[first-visible-unpinned-tab] { margin-inline-start: 0px !important; }
+
+/*** Other tab-related things ***/
+
+/* Hide tabs' close button */
+:root {
+--show-tab-close-button: none; /* DEFAULT: inline-flex; */ 
+--show-tab-close-button-hover: none; /* DEFAULT: inline-flex; */
+}
+.tab-close-button { visibility: collapse !important; }
+
+/* Tab close button options */
+.tabbrowser-tab:not([pinned]) .tab-close-button { display: var(--show-tab-close-button) !important; }
+.tabbrowser-tab:not([pinned]):hover .tab-close-button { display: var(--show-tab-close-button-hover) !important }
+
+/* Remove the tabs' title fade-out */
+.tabbrowser-tab { --tab-label-mask-size: 0px !important; }
+
+/* Remove tabs' shadows */
+.tab-background { box-shadow: none !important; }
+
+/*** Transparency ***/
+
+/* Navigation bar and bookmark toolbar transparency */
+#nav-bar {
+border: none !important;
+box-shadow: none !important;
+background: transparent !important;
+background-color: transparent !important; }
+#urlbar[focused="true"] > #urlbar-background, #urlbar:not([open]) > #urlbar-background { background: transparent !important; }
+.urlbarView { background: var(--toolbar-bgcolor) !important; }
+.urlbar-background, #searchbar { background-color: transparent !important; }
+#PersonalToolbar { background: transparent !important; }
+
+/* Autoscroller */
+#autoscroller {
+height: 28px !important;
+width: 28px !important;
+margin: -14px !important;
+background-color: var(--toolbar-bgcolor) !important;
+--panel-background: rgba(255, 255, 255) no-repeat center var(--autoscroll-background-image) !important;
+--panel-shadow: 0px;
+}
