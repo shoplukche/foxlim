@@ -2,7 +2,7 @@
 
 Foxlim is a slim, compact, and simple oneline stylesheet for the Proton UI Refresh in Firefox Desktop.
 
-![Preview](foxlim-firefox-150-preview.png)
+![Preview](foxlim-firefox-151-preview.png)
 
 inspired by [Waterfall](https://github.com/crambaud/waterfall).
 
@@ -15,12 +15,25 @@ inspired by [Waterfall](https://github.com/crambaud/waterfall).
 - compact - as little padding as possible
 - tabs on the left, URL bar on the right.
 
+Tested with Firefox versions 139 to 151.
+
+## Installation
+
+1. Go to **`about:config`** in the URL bar. Search for **`toolkit.legacyUserProfileCustomizations.stylesheets`** and double-click it or press *Toggle* to set it to **`true`**.
+
+2. Go to **`about:profiles`** in the URL bar and open the root directory of your current profile.
+
+3. Make a new directory called `chrome`.
+
+4. Download this [**`userChrome.css`**](https://github.com/shoplukche/foxlim/blob/main/userChrome.css) into that `chrome` directory.
+
+## Other
+
 Other properly-made stylesheets:
 - [gwfox](https://github.com/akkva/gwfox)
 - [FoxOne](https://github.com/Firnschnee/FoxOne)
 - [LittleFox](https://github.com/biglavis/LittleFox)
 - [Malevich](https://github.com/hermitm0nk/malevich)
-
 
 > [!CAUTION]
 > 
