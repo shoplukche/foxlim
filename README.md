@@ -4,7 +4,7 @@ Foxlim is a slim, compact, and simple oneline stylesheet for the Proton UI Refre
 
 ![Preview](foxlim-firefox-151-preview.png)
 
-inspired by [Waterfall](https://github.com/crambaud/waterfall).
+Inspired by [Waterfall](https://github.com/crambaud/waterfall).
 
 ## Features
 
@@ -33,6 +33,10 @@ Tested with Firefox versions 139 to 151.
 > 
 > You can right-click on the chrome, click on *Customize Toolbar…*, and remove what you don't need.
 
+> [!TIP]
+> 
+> Some chrome-related things can be modified through a `user.js` file.
+> 
 ## Other
 
 Other properly-made stylesheets:
