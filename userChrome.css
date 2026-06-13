@@ -41,14 +41,14 @@ It's 26px because of the navigation bar */
 .urlbar-input-container {
 height: var(--urlbar-container-height);
 padding-block: 0px;
-padding-inline: 1px !important; } }
+padding-inline: 1px !important; }
+.button-background { min-height: 24px !important; }
 
 /* URL bar results */
 :root { --urlbarView-results-padding: 1px !important; }
 
 /* Sizing and centering of navigation bar toolbar buttons, tab list button, and flexible space */
 .chromeclass-toolbar-additional {
-height: 24px !important;
 align-content: center;
 align-items: center;
 align-self: center;
@@ -64,8 +64,7 @@ align-self: center;
 #taskbar-tabs-button { visibility: collapse; }
 
 /* Notifications */
-#notifications-toolbar { min-width: 0px !important; width: 0px !important; visibility: collapse !important; }
-
+#notifications-toolbar { display: none !important }
 
 /* Context panel */
 menupopup, panel {
@@ -76,7 +75,7 @@ menupopup, panel {
 --panel-padding-block: 0px !important;
 --panel-shadow-margin: 0px !important;
 --menuitem-border-radius: 0px !important;
---menuitem-padding: 0px 4px !important;
+--menuitem-padding: 2px 4px !important;
 }
 
 /* Application (Hamburger) menu buttons */
@@ -236,6 +235,7 @@ padding: 0px !important; }
 :root {
 --toolbarbutton-border-radius: 0px !important;
 --urlbar-icon-padding: 4px !important;
+--uei-icon-size: 16px !important;
 --identity-box-margin-inline: 2px !important;
 --tab-close-button-padding: 0px !important;
 --focus-outline-offset: 1px !important;
@@ -316,10 +316,6 @@ toolbar .toolbaritem-combined-buttons { margin-inline: 0px !important; }
 /*** Other tab-related things ***/
 
 /* Hide tabs' close button */
-:root {
---show-tab-close-button: none; /* DEFAULT: inline-flex; */ 
---show-tab-close-button-hover: none; /* DEFAULT: inline-flex; */
-}
 .tab-close-button { visibility: collapse !important; }
 
 /* Tab close button options */
