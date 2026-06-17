@@ -15,8 +15,6 @@ Inspired by [Waterfall](https://github.com/crambaud/waterfall).
 - compact - as little padding as possible
 - tabs on the left, URL bar on the right.
 
-Tested with Firefox versions 139 to 151.
-
 ## Installation
 
 1. Go to **`about:config`** in the URL bar. Search for **`toolkit.legacyUserProfileCustomizations.stylesheets`** and double-click it or press *Toggle* to set it to **`true`**.
@@ -55,7 +53,11 @@ Other properly-made stylesheets:
 > 
 > If you can do without Firefox, use Basilisk, Pale Moon, or a fork of them.
 
-This stylesheet is a little broken (eg. alert() is too small), because Mozilla employees, as all bike-shedders, love to break everything.
+> [!CAUTION]
+> 
+> Tested with Firefox versions 139 to 151.
+> 
+> Mozilla renamed some variables and classes in 152, so this stylesheet is broken for 152, because Mozilla employees, as all bike-shedders, love to break everything just to appear busy.
 
 The reason Mozilla doesn't officially support custom browser CSS stylesheets is because they don't know how to use CSS properly. Just open the Browser Toolbox to see the nonsense CSS they wrote for the browser. It's worse than AI-generated.
 
