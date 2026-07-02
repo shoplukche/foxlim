@@ -14,7 +14,7 @@
 
 /*** Tabs toolbar and URL bar sizes and alignment ***/
 
-#TabsToolbar { height: 28px !important; }
+#TabsToolbar { height: 26px !important; }
 #TabsToolbar-customization-target { height: 26px !important; }
 
 /* Tab minimal height. 24px is the lowest they'll go without clipping the text
@@ -29,12 +29,71 @@ It's 26px because of the navigation bar */
 /* Centering of the inner tabs toolbar */
 #TabsToolbar-customization-target { align-self: center; }
 
+
+/* Tab context menu items */
+
+/* Add Tab to New Group */
+#context_addToNewGroup,
+#context_moveTabToNewGroup,
+#context_moveTabToGroup,
+#context_ungroupTab + menuseparator,
+
+/* Add Split View */
+#context_moveSplitViewToNewGroup,
+
+/* Share */
+#tabContextMenu .share-tab-url-item,
+
+/* Reload Tab */
+#context_reloadTab,
+
+/* Unload Tab */
+#context_unloadTab,
+
+/* Duplicate Tab */
+#context_duplicateTab,
+
+/* Bookmark Tab… */
+#context_bookmarkTab,
+
+/* Move Tab */
+#context_moveTabOptions,
+
+/* Send Tab to Device (Share) */
+#context_sendTabToDevice,
+#context_sendTabToDevice_separator,
+#context_sendTabToDevicePopupMenu,
+#context-sendlinktodevice,
+#context-sendpagetodevice,
+shareTabURL,
+#context-sep-sendpagetodevice,
+
+/* Open in New Container Tab */
+#context_openTabInContainer,
+#context-openlinkinusercontext-menu,
+
+/* Select All Tabs */
+#context_selectAllTabs,
+
+/* Close Tab 
+#context_closeTab,
+*/
+
+/* Reopen Closed Tab */
+#context_undoCloseTab,
+
+/* Close Duplicate Tabs */
+#context_closeDuplicateTabs,
+
+/* Close Multiple Tabs */
+#context_closeTabOptions { display: none !important; }
+
 /* URL bar */
 #urlbar-container { flex: 1 !important; }
 
 /* URL bar height. It should be the same as the extension icon sizes (26px) */
 #urlbar-container, #search-container { padding-block: 0px !important; }
-#urlbar-container { --urlbar-container-height: 28px !important; }
+#urlbar-container { --urlbar-container-height: 26px !important; }
 #urlbar { --urlbar-min-height: 26px !important; --urlbar-height: 26px !important; }
 
 /* URL bar breakout */
@@ -77,6 +136,9 @@ menupopup, panel {
 --menuitem-border-radius: 0px !important;
 --menuitem-padding: 2px 4px !important;
 }
+
+/* Hide menu item separators */
+menuseparator { display: none !important; }
 
 /* Application (Hamburger) menu buttons */
 .subviewbutton { min-height: 18px !important; }
@@ -263,12 +325,12 @@ padding: 0px !important; }
 
 /* Padding of navigation bar toolbar buttons
 It can go to 0px, but some extensions, like uBlock Origin, don't fit below 6px */
-.toolbarbutton-icon, .toolbarbutton-badge-stack { --toolbarbutton-inner-padding: 6px; }
+.toolbarbutton-icon, .toolbarbutton-badge-stack { --toolbarbutton-padding-inner: 4px; }
 /* This has to be 1px */
 #TabsToolbar {
 border-inline-start: 1px solid transparent !important;
 padding: 1px;
---toolbarbutton-inner-padding: 0px; }
+--toolbarbutton-padding-inner: 0px; }
 :root {
 --toolbarbutton-outer-padding: 0px !important;
 --arrowpanel-menuitem-padding: 0px !important;
@@ -337,7 +399,7 @@ box-shadow: none !important;
 background: transparent !important;
 background-color: transparent !important; }
 #urlbar[focused="true"] > #urlbar-background, #urlbar:not([open]) > #urlbar-background { background: transparent !important; }
-.urlbarView { background: var(--toolbar-bgcolor) !important; }
+.urlbarView-body-inner { background: var(--toolbar-background-color) !important; }
 .urlbar-background, #searchbar { background-color: transparent !important; }
 #PersonalToolbar { background: transparent !important; }
 
