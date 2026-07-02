@@ -42,6 +42,7 @@ Other properly-made stylesheets:
 - [FoxOne](https://github.com/Firnschnee/FoxOne)
 - [LittleFox](https://github.com/biglavis/LittleFox)
 - [Malevich](https://github.com/hermitm0nk/malevich)
+- [zap's cool photon theme](https://github.com/zapSNH/zapsCoolPhotonTheme)
 
 > [!CAUTION]
 > 
