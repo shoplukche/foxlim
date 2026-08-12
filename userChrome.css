@@ -79,8 +79,9 @@ shareTabURL,
 #context_closeTab,
 */
 
-/* Reopen Closed Tab */
+/* Reopen Closed Tab 
 #context_undoCloseTab,
+*/
 
 /* Close Duplicate Tabs */
 #context_closeDuplicateTabs,
@@ -277,8 +278,14 @@ Comment-out the ones you want to see in the context menu ***/
 { display: none !important; }
 
 
-/*** Padding and similar nonsense ***/
-/* Makes the Proton UI Refresh less tablet-y and more desktop-like. */
+/*** Padding, margins, and similar nonsense ***/
+
+/* Popup Box */
+:root[subdialog] { & dialog { --grid-padding: 0px !important; padding: 0px !important; } }
+#titleContainer { margin-inline: 0px !important; }
+:root[subdialog] { & description, & checkbox { margin: 0px !important; } }
+:root[subdialog] { & dialog { &::part(dialog-button) { margin: 2px !important; min-width: auto; } } }
+.sizeDetermined #infoBody { min-height: 22px !important; }
 
 /* Border radius */
 :root {
