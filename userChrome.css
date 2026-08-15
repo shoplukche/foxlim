@@ -56,7 +56,7 @@ background-color: var(--toolbar-bgcolor) !important;
 #urlbar-container, #search-container { padding-block: 0px !important; }
 #urlbar-container { --urlbar-container-height: 26px !important; }
 #urlbar { --urlbar-min-height: 24px !important; --urlbar-height: var(--urlbar-min-height) !important; }
-#urlbar { --urlbar-width: 275px !important; width: var(--urlbar-width) !important; margin: 0px !important; top: 1px; }
+#urlbar { --urlbar-width: 275px; width: var(--urlbar-width) !important; margin: 0px !important; top: 1px; }
 .urlbar[breakout][breakout-extend] { width: var(--urlbar-width) !important; }
 
 /* URL bar breakout */
