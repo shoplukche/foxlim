@@ -56,9 +56,7 @@ Other properly-made stylesheets:
 
 > [!CAUTION]
 > 
-> Tested with Firefox versions 139 to 151.
-> 
-> Mozilla renamed some variables and classes in 152, so this stylesheet is broken for 152, because Mozilla employees, as all bike-shedders, love to break everything just to appear busy.
+> Tested with Firefox versions from 128 ESR to 153.
 
 The reason Mozilla doesn't officially support custom browser CSS stylesheets is because they don't know how to use CSS properly. Just open the Browser Toolbox to see the nonsense CSS they wrote for the browser. It's worse than AI-generated.
 
