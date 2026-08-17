@@ -14,7 +14,7 @@ Inspired by [Waterfall](https://github.com/crambaud/waterfall).
 - sharp - no border radii
 - compact - as little padding as possible
 - tabs on the left, URL bar on the right
-- tested with Firefox versions from 128 ESR to 153.
+- works with Firefox versions from 128 ESR to 153.
 
 ## Installation
 
