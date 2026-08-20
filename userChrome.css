@@ -288,6 +288,11 @@ menuseparator { display: none !important; }
 
 { display: none !important; }
 
+  /** Tab context menu **/
+
+#tabContextMenu { margin: 0px !important; }
+.menupopup-arrowscrollbox { margin: 0px !important; }
+
   /** Tab context menu items **/
 
 /* Add Tab to New Group */
@@ -329,6 +334,7 @@ shareTabURL,
 /* Open in New Container Tab */
 #context_openTabInContainer,
 #context-openlinkinusercontext-menu,
+#context_reopenInContainer,
 
 /* Select All Tabs */
 #context_selectAllTabs,
