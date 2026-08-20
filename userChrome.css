@@ -42,6 +42,8 @@ background-color: var(--toolbar-bgcolor) !important;
 :root { --tabstrip-min-height: 26px !important; }
 /* Tab minimal height. */
 :root { --tab-min-height: 26px !important; }
+/* Tab background. */
+.tab-background { margin-block: 0px !important; margin: 0px !important; padding: 0px !important; }
 /* Tab text label box height */
 .tab-label-container { height: 26px !important; }
 :root { --tab-block-margin: 0px !important; }
