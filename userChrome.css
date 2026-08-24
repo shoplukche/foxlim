@@ -59,7 +59,7 @@ background-color: var(--toolbar-bgcolor) !important;
 /* URL bar height. It should be the same as the extension icon sizes (26px) */
 #urlbar-container, #search-container { padding-block: 0px !important; }
 #urlbar-container { --urlbar-container-height: 26px !important; }
-#urlbar { --urlbar-min-height: 28px !important; --urlbar-height: var(--urlbar-min-height) !important; }
+#urlbar { --urlbar-min-height: 24px !important; --urlbar-height: var(--urlbar-min-height) !important; }
 #urlbar { --urlbar-width: 275px; width: var(--urlbar-width) !important; margin: 0px !important; top: 1px; }
 .urlbar[breakout][breakout-extend] { width: var(--urlbar-width) !important; }
 #urlbar-input-box { height: 26px; }
@@ -124,8 +124,9 @@ padding: 0px !important; }
 It can go to 0px, but some extensions, like uBlock Origin, don't fit below 6px */
 .toolbarbutton-icon, .toolbarbutton-badge-stack { --toolbarbutton-padding-inner: 5px; }
 toolbarbutton { & > .toolbarbutton-icon { padding: var(--toolbarbutton-padding-inner); } }
-#scrollbutton-down { padding: 0px; }
+.toolbarbutton-1 { & > .toolbarbutton-icon, & > .toolbarbutton-badge-stack > .toolbarbutton-icon { width: unset !important; } }
 .toolbarbutton-icon { padding: 0px; }
+#scrollbutton-down { padding: 0px; }
 /* This has to be 1px */
 #TabsToolbar { border-inline-start: 1px solid transparent !important; padding: 1px; --toolbarbutton-padding-inner: 0px; }
 :root {
@@ -137,6 +138,7 @@ toolbarbutton { & > .toolbarbutton-icon { padding: var(--toolbarbutton-padding-i
 --urlbar-padding-block: 0px; }
 toolbar .toolbaritem-combined-buttons { margin-inline: 0px !important; }
 .toolbar-items { height: 26px !important; }
+.urlbar-input-box { margin-inline-start: 7px !important; }
 
 /* URL bar "Suggestions" label margin */
 .urlbarView-row[label] { margin-block-start: 20px !important; }
