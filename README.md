@@ -55,7 +55,7 @@ Other properly-made stylesheets:
 > 
 > If you can do without Firefox, use Basilisk, Pale Moon, or a fork of them.
 
-The reason Mozilla doesn't officially support custom browser CSS stylesheets is because they don't know how to use CSS properly. Just open the Browser Toolbox to see the nonsense CSS they wrote for the browser. It's worse than AI-generated.
+The reason Mozilla doesn't officially support custom browser CSS stylesheets is because they don't know how to use CSS properly. Just open the Browser Toolbox to see the nonsense CSS they wrote for the browser. It's worse than AI-generated. Whoever wrote the CSS for Project Nova and whoever added functions to CSS needs to go to an asylum.
 
 Mozilla needs to simplify their browser's CSS and give userChrome.css and userContent.css highest priority, instead of having to put thousands of "!important" rules in them.
 
