@@ -2,6 +2,8 @@
 
 /* The "default" layout is shown when the minimal window width is smaller than 1000px */
 #navigator-toolbox { display: flex; flex-direction: column; }
+.titlebar-spacer, #TabsToolbar > .titlebar-buttonbox-container { display: none !important; }
+#nav-bar > .titlebar-buttonbox-container { display: revert !important; }
 
 /* The layout will transition to one-line when the minimal window width is bigger than 1000px */
 @media (min-width: 1000px) { #navigator-toolbox { display: flex; flex-direction: row; flex-wrap: wrap; }
@@ -57,9 +59,11 @@ background-color: var(--toolbar-bgcolor) !important;
 /* URL bar height. It should be the same as the extension icon sizes (26px) */
 #urlbar-container, #search-container { padding-block: 0px !important; }
 #urlbar-container { --urlbar-container-height: 26px !important; }
-#urlbar { --urlbar-min-height: 24px !important; --urlbar-height: var(--urlbar-min-height) !important; }
+#urlbar { --urlbar-min-height: 28px !important; --urlbar-height: var(--urlbar-min-height) !important; }
 #urlbar { --urlbar-width: 275px; width: var(--urlbar-width) !important; margin: 0px !important; top: 1px; }
 .urlbar[breakout][breakout-extend] { width: var(--urlbar-width) !important; }
+#urlbar-input-box { height: 26px; }
+#page-action-buttons { width: 26px; height: 26px; }
 
 /* URL bar breakout */
 .urlbar-input-container {
@@ -96,7 +100,9 @@ padding: 0px !important; }
 
 :root {
 --toolbarbutton-border-radius: 0px !important;
+--toolbarbutton-padding-outer: 0px !important;
 --urlbar-icon-padding: 4px !important;
+--toolbar-padding-inline: 0px !important;
 --uei-icon-size: 16px !important;
 --identity-box-margin-inline: 2px !important;
 --tab-close-button-padding: 0px !important;
@@ -116,7 +122,10 @@ padding: 0px !important; }
 
 /* Padding of navigation bar toolbar buttons
 It can go to 0px, but some extensions, like uBlock Origin, don't fit below 6px */
-.toolbarbutton-icon, .toolbarbutton-badge-stack { --toolbarbutton-padding-inner: 4px; }
+.toolbarbutton-icon, .toolbarbutton-badge-stack { --toolbarbutton-padding-inner: 5px; }
+toolbarbutton { & > .toolbarbutton-icon { padding: var(--toolbarbutton-padding-inner); } }
+#scrollbutton-down { padding: 0px; }
+.toolbarbutton-icon { padding: 0px; }
 /* This has to be 1px */
 #TabsToolbar { border-inline-start: 1px solid transparent !important; padding: 1px; --toolbarbutton-padding-inner: 0px; }
 :root {
@@ -141,15 +150,15 @@ toolbar .toolbaritem-combined-buttons { margin-inline: 0px !important; }
 /* Empty space between URL bar suggestions */
 :root { --urlbarView-row-gutter: 0px !important; }
 
-#star-button-box { width: 22px !important; height: 22px !important; }
+#star-button-box { width: 24px !important; height: 24px !important; }
 
 /* This time, search with: padding */
 .search-one-offs { padding-block: 0px !important; }
 #urlbar .search-panel-one-offs-header-label { padding-inline: 8px; }
 
 /* Make the titlebar buttons thinner */
-.titlebar-buttonbox-container { margin: 0px 4px 0px 4px !important; }
-.titlebar-button { margin: 0px; padding: 8px 4px !important; }
+.titlebar-buttonbox-container { margin: 0px !important; }
+.titlebar-button { margin: 0px; padding: 8px !important; }
 #back-button { padding: 0px !important; }
 #urlbar-container { margin: 0px !important; }
 #PanelUI-menu-button { padding: 0px !important; }
