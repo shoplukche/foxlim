@@ -2,7 +2,7 @@
 
 Foxlim is a slim, compact, and simple oneline stylesheet for the Proton UI Refresh in Firefox Desktop.
 
-![Preview](foxlim-firefox-151-preview.png)
+![Preview](foxlim-firefox-154-preview.png)
 
 Inspired by [Waterfall](https://github.com/crambaud/waterfall).
 
