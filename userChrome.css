@@ -75,6 +75,9 @@ padding-inline: 1px !important; }
 /* URL bar results */
 :root { --urlbarView-results-padding: 1px !important; }
 
+/* URL bar picture-in-picture icon */
+#picture-in-picture-button { display: none; }
+
 /* Sizing and centering of navigation bar toolbar buttons, tab list button, and flexible space */
 .chromeclass-toolbar-additional {
 align-content: center;
@@ -218,7 +221,7 @@ menupopup, panel {
 --panel-padding-block: 0px !important;
 --panel-shadow-margin: 0px !important;
 --menuitem-border-radius: 0px !important;
---menuitem-padding: 2px 4px !important; }
+--menuitem-padding: 0px 4px !important; }
 
 /* Application (Hamburger) menu buttons */
 .subviewbutton { min-height: 18px !important; }
@@ -310,7 +313,7 @@ menuseparator { display: none !important; }
   /** Tab context menu **/
 
 #tabContextMenu { margin: 0px !important; }
-.menupopup-arrowscrollbox { margin: 0px !important; }
+.menupopup-arrowscrollbox { margin: 2px !important; }
 
   /** Tab context menu items **/
 
