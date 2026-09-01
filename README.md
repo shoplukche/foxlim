@@ -14,7 +14,7 @@ Inspired by [Waterfall](https://github.com/crambaud/waterfall).
 - sharp - no border radii
 - compact - as little padding as possible
 - tabs on the left, URL bar on the right
-- works with Firefox versions from 128 ESR to 153.
+- works with Firefox versions from 128 ESR to 154.
 
 ## Installation
 
@@ -54,6 +54,8 @@ Other properly-made stylesheets:
 > [!TIP]
 > 
 > If you can do without Firefox, use Basilisk, Pale Moon, or a fork of them.
+
+The last version on which this userChrome.css works is 154. Mozilla broke it in 155 and I can't fix it. 
 
 The reason Mozilla doesn't officially support custom browser CSS stylesheets is because they don't know how to use CSS properly. Just open the Browser Toolbox to see the nonsense CSS they wrote for the browser. It's worse than AI-generated. Whoever wrote the CSS for Project Nova and whoever added functions to CSS needs to go to an asylum.
 
